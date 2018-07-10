@@ -8,6 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
 
   varImagem = 'https://loremflickr.com/320/240/dog'
+  valorAtual: string = '';
+  nome: string = 'abc';
+  nomeDoCurso: string = 'Angular';
+
+  botaoClicado() {
+    alert('Botão clicado!');
+  }
+
+  onKeyUp(evento) {
+    this.valorAtual = (evento.target.value);
+  }
+
+pessoa: any = {
+  nome: 'bruno',
+  idade: 21
+}
 
   constructor() { }
 
