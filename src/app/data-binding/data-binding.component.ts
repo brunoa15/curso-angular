@@ -16,14 +16,19 @@ export class DataBindingComponent implements OnInit {
     alert('Botão clicado!');
   }
 
+
   onKeyUp(evento) {
     this.valorAtual = (evento.target.value);
   }
 
-pessoa: any = {
-  nome: 'bruno',
-  idade: 21
-}
+  onMudouValor(evento) {
+    console.log(evento.novoValor);
+  }
+
+  pessoa: any = {
+    nome: 'bruno',
+    idade: 21
+  }
 
   constructor() { }
 
