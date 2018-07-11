@@ -1,0 +1,13 @@
+<h5>Styles com diretiva ngStyle</h5>
+<button
+  [ngStyle]="{
+    'backgroundColor': (ativo ? 'blue' : 'gray'),
+    'color': (ativo ? 'white' : 'black'),
+    'fontWeight': (ativo ? 'bold' : 'normal'),
+    'fontSize': tamanhoFonte + 'px'
+  }"
+  (click)="onClick()"
+> Botão
+</button>
+<br>
+<input type="text" [(ngModel)]="tamanhoFonte">
